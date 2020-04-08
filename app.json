@@ -1,0 +1,51 @@
+{
+  "name": "Erxes Engages Email Sender on Heroku",
+  "description": "Erxes Engages Email Sender",
+  "keywords": [
+    "Marketing",
+    "sales",
+    "customer engagement",
+    "customer support",
+    "CRM",
+    "node",
+    "express",
+    "react",
+    "typescript",
+    "webpack",
+    "graphql",
+    "apollo"
+  ],
+  "website": "https://erxes.io",
+  "repository": "https://github.com/erxes/erxes",
+  "logo": "https://raw.githubusercontent.com/erxes/erxes/master/ui/public/images/logo-dark.png",
+  "success_url": "/",
+  "env": {
+    "PORT": {
+      "description": "A port number that erxes api will be running on",
+      "value": "3900"
+    },
+    "MAIN_API_DOMAIN": {
+      "description": "Erxes API Domain",
+      "value": "https://erxes-api.herokuapp.com"
+    },
+    "MONGO_URL": {
+      "description": "Erxes Engages MONGO_URL",
+      "value": "MONGO_URL"
+    },
+    "RABBITMQ_HOST": {
+      "description": "RABBITMQ_HOST",
+      "value": "copy and paste from erxes-api RABBITMQ_HOST"
+    }
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGO"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/batnasan/heroku-buildpack-subdir"
+    }
+  ]
+}
