@@ -1,2 +1,2 @@
 https://github.com/batnasan/erxes-engages-heroku-button
-logger=https://github.com/batnasan/heroku-buildpack-nodejs.git
+engages-email-sender=https://github.com/batnasan/heroku-buildpack-nodejs.git
